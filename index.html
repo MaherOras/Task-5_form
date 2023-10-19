@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Script Task 3 </title>
+  <link rel="icon"  href="images/js.png"/>
+  <link rel="stylesheet" href="styles/all.min.css"/>
+  <link rel="stylesheet" href="styles/bootstrap.min.css"/>
+  <link rel="stylesheet" href="index.css"/>
+  <!-- description-->
+  <meta name="description" content="Java Script TASK 5  FORM">
+  <meta name="keywords" content=" Java Script tasks , Hesham Khalil , Maher Azeb">
+  <meta name="author" content="Maher Azeb">
+</head>
+
+<body >
+    <div class="d-flex justify-content-center align-items-center vh-100 w-100">
+      
+      <form  action="home.html" onsubmit="return validator()"
+          class=" d-flex justify-content-center align-items-center bg-primary flex-column rounded-2 px-0 py-3 pt-0 w-25" >
+          <label id="myTitle" class="mb-4 mt-0 pt-2 pb-2 fw-bold w-100 text-center rounded-2" 
+                 style="background-color: rgb(33, 33, 107);
+          color: white;
+          font-weight: 500;
+          font-size: xx-large;">SIGN IN</label>
+         <label class="mb-2 fw-bold p-1 "  style="color:black" id="userName">User Name</label>
+        <input type="text" class="mb-4 rounded-1 w-75 p-1 userNameInput">
+        <label class="mb-2 fw-bold p-1 "  style="color:black" id="userPhone" >Phone</label>
+        <input type="text" class="mb-4 rounded-1 w-75 p-1 userPhoneInput" title="01x xxxx xxxx">
+        <label class="mb-2 fw-bold p-1 " id="userPW">Password</label>
+        <input type="password" class="mb-1 rounded-1 w-75 p-1 userPWInput">
+        <div class="chk mb-4 ms-3 rounded-1 w-100 ps-5">
+          <input type="checkbox" id="chkBox" style="background-color: black;">
+          <label class="mb-2 fw-bold p-1" >Show Password</label>
+          <h7 id="warnMsg" style="display:none;color:red">password should be more than 6 characters</h7>
+        </div>
+        <button type="submit" class="btn btn-dark mb-2 w-50">Login</button>
+      </form>
+    </div>
+</body>              
+  <script src="java/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
